@@ -13,6 +13,8 @@
 		86574F5524C729BE00340501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86574F5424C729BE00340501 /* Assets.xcassets */; };
 		86574F5824C729BE00340501 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86574F5724C729BE00340501 /* Preview Assets.xcassets */; };
 		86574F5B24C729BE00340501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86574F5924C729BE00340501 /* LaunchScreen.storyboard */; };
+		86574F6724C72ABB00340501 /* Lamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86574F6624C72ABB00340501 /* Lamp.swift */; };
+		86574F6924C72FF200340501 /* SwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86574F6824C72FF200340501 /* SwitchButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		86574F5724C729BE00340501 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		86574F5A24C729BE00340501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86574F5C24C729BE00340501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86574F6624C72ABB00340501 /* Lamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lamp.swift; sourceTree = "<group>"; };
+		86574F6824C72FF200340501 /* SwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,10 @@
 		86574F4D24C729BA00340501 /* Traffic Lights SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				86574F4E24C729BA00340501 /* AppDelegate.swift */,
-				86574F5024C729BA00340501 /* SceneDelegate.swift */,
-				86574F5224C729BA00340501 /* ContentView.swift */,
-				86574F5424C729BE00340501 /* Assets.xcassets */,
-				86574F5924C729BE00340501 /* LaunchScreen.storyboard */,
-				86574F5C24C729BE00340501 /* Info.plist */,
+				86574F6224C72A0800340501 /* SupportingFiles */,
+				86574F6524C72A5400340501 /* Views */,
+				86574F6324C72A3B00340501 /* Sources */,
+				86574F6424C72A4A00340501 /* Storyboards */,
 				86574F5624C729BE00340501 /* Preview Content */,
 			);
 			path = "Traffic Lights SwiftUI";
@@ -73,6 +75,42 @@
 				86574F5724C729BE00340501 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86574F6224C72A0800340501 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				86574F4E24C729BA00340501 /* AppDelegate.swift */,
+				86574F5024C729BA00340501 /* SceneDelegate.swift */,
+				86574F5C24C729BE00340501 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		86574F6324C72A3B00340501 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				86574F5424C729BE00340501 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		86574F6424C72A4A00340501 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				86574F5924C729BE00340501 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		86574F6524C72A5400340501 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86574F5224C729BA00340501 /* ContentView.swift */,
+				86574F6624C72ABB00340501 /* Lamp.swift */,
+				86574F6824C72FF200340501 /* SwitchButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				86574F4F24C729BA00340501 /* AppDelegate.swift in Sources */,
+				86574F6924C72FF200340501 /* SwitchButton.swift in Sources */,
+				86574F6724C72ABB00340501 /* Lamp.swift in Sources */,
 				86574F5124C729BA00340501 /* SceneDelegate.swift in Sources */,
 				86574F5324C729BA00340501 /* ContentView.swift in Sources */,
 			);
@@ -288,7 +328,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Traffic Lights SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = D28YKYJC2T;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Traffic Lights SwiftUI/Info.plist";
+				INFOPLIST_FILE = "Traffic Lights SwiftUI/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +348,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Traffic Lights SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = D28YKYJC2T;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Traffic Lights SwiftUI/Info.plist";
+				INFOPLIST_FILE = "Traffic Lights SwiftUI/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
