@@ -15,13 +15,10 @@ struct Lamp: View {
     
     var body: some View {
         Color(color)
-            .opacity(opacity ?? 0.2)
             .frame(width: 150, height: 150)
-            .clipShape(Capsule())
-            .overlay(Circle()
-                .strokeBorder(
-                    Color.white, lineWidth: 4
-            ))
+            .clipShape(Circle())
+            .opacity(opacity ?? 0.2)
+            .overlay(Circle().strokeBorder(Color.white, lineWidth: 4))
     }
 }
 
